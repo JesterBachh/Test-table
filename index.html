@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New <table></table></title>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        td[contenteditable="true"] {
+            background-color: #f0f8ff;
+        }
+        #controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #notification {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+</table>
+
+<div id="controls">
+    <input type="text" id="newName" placeholder="New Name">
+    <input type="text" id="newSurname" placeholder="New Surname">
+    <button id="addUserBtn">Add User</button>
+</div>
+
+<p id="notification"></p>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
